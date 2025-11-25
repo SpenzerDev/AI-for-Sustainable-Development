@@ -17,8 +17,9 @@ The core of the system is a Supervised Learning model for time-series forecastin
 ## 3. Data Sources (Features)
 The model ingests high-volume, time-series data from various sources to predict two critical values: Future Energy Demand ($E_{pred}$) and Future Carbon Intensity ($\text{CI}_{pred}$) of the grid.
 
-Data Source Category,Specific Features (Input xi​),Target Variable (Output y)
-Environmental,"Temperature, humidity, wind speed, solar irradiance, precipitation, cloud cover (forecasted).",Future Energy Demand (Epred​)
-Temporal/Socioeconomic,"Time of day, day of week, season, public holidays, utility prices, major local events.",Future Energy Demand (Epred​)
-Grid/Supply,"Historical energy generation mix (coal, gas, solar, wind), current grid load, transmission status.",Future Carbon Intensity (CIpred​)
+| Data Source Category   | Specific Features (Input $x_i$)                                                                    | Target Variable (Output $y$)                 |
+|------------------------|----------------------------------------------------------------------------------------------------|----------------------------------------------|
+| Environmental          | Temperature, humidity, wind speed, solar irradiance, precipitation, cloud cover (forecasted).      | Future Energy Demand ($E_{pred}$)            |
+| Temporal/Socioeconomic | Time of day, day of week, season, public holidays, utility prices, major local events.             | Future Energy Demand ($E_{pred}$)            |
+| Grid/Supply            | Historical energy generation mix (coal, gas, solar, wind), current grid load, transmission status. | Future Carbon Intensity ($\text{CI}_{pred}$) |
 
